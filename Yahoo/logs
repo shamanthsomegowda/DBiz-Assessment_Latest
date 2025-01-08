@@ -1,0 +1,63 @@
+2025-01-08 14:21:18.320 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-01-08 14:21:18.323 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-01-08 14:21:18.324 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-01-08 14:21:18.553 [main]DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-01-08 14:21:18.601 [main]INFO  Yahoo Test - implicitWaitInSeconds: 30
+2025-01-08 14:21:18.601 [main]INFO  Yahoo Test - pageLoadWaitInSeconds: 120
+2025-01-08 14:21:19.974 [main]INFO  Yahoo Test - Selected Browser Type is: Chrome
+2025-01-08 14:21:20.027 [main]INFO  Yahoo Test - Selected URL is https://finance.yahoo.com/
+2025-01-08 14:21:52.491 [main]INFO  Yahoo Test - Closing the execution
+2025-01-08 14:23:08.450 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-01-08 14:23:08.453 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-01-08 14:23:08.453 [main]DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-01-08 14:23:08.549 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-01-08 14:23:08.551 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-01-08 14:23:08.551 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-01-08 14:23:08.552 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-01-08 14:23:08.552 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-01-08 14:23:08.553 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-01-08 14:23:08.563 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-01-08 14:23:08.564 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-01-08 14:23:08.567 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-01-08 14:23:08.567 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-01-08 14:23:08.568 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-01-08 14:23:08.569 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-01-08 14:23:08.569 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-01-08 14:23:08.569 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-01-08 14:23:08.602 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-01-08 14:23:08.602 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle themefd26doctype
+2025-01-08 14:23:08.637 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stylesheet5d8bdoctype
+2025-01-08 14:23:08.641 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctstylesheet4257type
+2025-01-08 14:23:08.643 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfonts6623type
+2025-01-08 14:23:08.645 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfont14d8type
+2025-01-08 14:23:08.647 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfills2c6ftype
+2025-01-08 14:23:08.649 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfill550ctype
+2025-01-08 14:23:08.652 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctborders0d66type
+2025-01-08 14:23:08.654 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctborderf935type
+2025-01-08 14:23:08.656 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcellxfs1322type
+2025-01-08 14:23:08.657 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctxf97f7type
+2025-01-08 14:23:08.659 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcellstylexfsa81ftype
+2025-01-08 14:23:08.660 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctdxfsb26atype
+2025-01-08 14:23:08.662 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle cttablestyles872ftype
+2025-01-08 14:23:08.663 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle sstf81fdoctype
+2025-01-08 14:23:08.667 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsst44f3type
+2025-01-08 14:23:08.673 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctrsta472type
+2025-01-08 14:23:08.683 [main]DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-01-08 14:23:08.684 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle workbookec17doctype
+2025-01-08 14:23:08.687 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctworkbook83c3type
+2025-01-08 14:23:08.690 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheets49fdtype
+2025-01-08 14:23:08.691 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheet4dbetype
+2025-01-08 14:23:08.692 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle strelationshipid1e94type
+2025-01-08 14:23:08.694 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle worksheetf539doctype
+2025-01-08 14:23:08.697 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctworksheet530dtype
+2025-01-08 14:23:08.703 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcols627ctype
+2025-01-08 14:23:08.706 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcola95ftype
+2025-01-08 14:23:08.715 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetdata8408type
+2025-01-08 14:23:08.716 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctrowdd39type
+2025-01-08 14:23:08.719 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcell842btype
+2025-01-08 14:23:08.722 [main]TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcellrefe4e0type
+2025-01-08 14:23:08.733 [main]INFO  Yahoo Test - implicitWaitInSeconds: 30
+2025-01-08 14:23:08.734 [main]INFO  Yahoo Test - pageLoadWaitInSeconds: 120
+2025-01-08 14:23:10.146 [main]INFO  Yahoo Test - Selected Browser Type is: Chrome
+2025-01-08 14:23:10.203 [main]INFO  Yahoo Test - Selected URL is https://finance.yahoo.com/
+2025-01-08 14:23:43.449 [main]INFO  Yahoo Test - Closing the execution
