@@ -10,3 +10,4 @@ Simple HTML reports are generated in the Reports folder at the root of the proje
 The user should have JRE and Maven configured in their machine to run the project.
 
 The following git link provides access to the project folder saved by the name Yahoo.
+https://github.com/shamanthsomegowda/DBiz-Assessment_Latest.git
