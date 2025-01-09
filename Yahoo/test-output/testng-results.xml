@@ -2,22 +2,22 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-08T19:59:12 IST" name="Suite" finished-at="2025-01-08T20:09:49 IST" duration-ms="637737">
+  <suite started-at="2025-01-09T12:03:37 IST" name="Suite" finished-at="2025-01-09T12:03:44 IST" duration-ms="6719">
     <groups>
     </groups>
-    <test started-at="2025-01-08T19:59:12 IST" name="Test" finished-at="2025-01-08T20:09:49 IST" duration-ms="637737">
+    <test started-at="2025-01-09T12:03:37 IST" name="Test" finished-at="2025-01-09T12:03:44 IST" duration-ms="6719">
       <class name="com.yahoo.testcases.ValidateTeslaStock">
-        <test-method signature="validate()[pri:0, instance:com.yahoo.testcases.ValidateTeslaStock@210ab13f]" started-at="2025-01-08T19:59:12 IST" name="validate" finished-at="2025-01-08T20:09:49 IST" duration-ms="637674" status="PASS">
+        <test-method signature="validate()[pri:0, instance:com.yahoo.testcases.ValidateTeslaStock@443118b0]" started-at="2025-01-09T12:03:37 IST" name="validate" finished-at="2025-01-09T12:03:44 IST" duration-ms="6684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate -->
       </class> <!-- com.yahoo.testcases.ValidateTeslaStock -->
       <class name="com.yahoo.drivers.Driver">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.yahoo.drivers.Driver@7b4c50bc]" started-at="2025-01-08T19:58:31 IST" name="setUp" finished-at="2025-01-08T19:59:12 IST" duration-ms="40788" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.yahoo.drivers.Driver@3270d194]" started-at="2025-01-09T12:03:01 IST" name="setUp" finished-at="2025-01-09T12:03:37 IST" duration-ms="36198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yahoo.drivers.Driver@7b4c50bc]" started-at="2025-01-08T20:09:49 IST" name="tearDown" finished-at="2025-01-08T20:09:50 IST" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yahoo.drivers.Driver@3270d194]" started-at="2025-01-09T12:03:44 IST" name="tearDown" finished-at="2025-01-09T12:03:45 IST" duration-ms="1042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

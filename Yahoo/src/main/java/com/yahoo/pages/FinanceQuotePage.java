@@ -74,7 +74,8 @@ public class FinanceQuotePage extends GenericWebFunctions {
 		}
 		return stockValueTxt.getText();
 	}
-
+	
+	//To read values present for the stock selected then store in the hashmap
 	public HashMap<String, String> displayStockDetails() {
 		HashMap<String, String> stockDetailsMap = new HashMap<String, String>();
 		moveToOrMouseHover(stockVolumeTxt);
