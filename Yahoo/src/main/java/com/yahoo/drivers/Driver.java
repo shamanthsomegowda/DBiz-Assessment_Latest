@@ -43,7 +43,7 @@ public class Driver {
 	public void initializeProperties() {
 		try {
 			FileInputStream fip = new FileInputStream(
-					"C:\\Users\\shama\\Documents\\Shamanth\\Professional\\Selenium Projects\\Yahoo\\scr\\test\\resource\\config.properties");
+					"C:\\Users\\shama\\Documents\\GitHub\\DBiz\\DBiz-Assessment_Latest\\Yahoo\\src\\test\\resources\\config.properties");
 			prop = new Properties();
 			prop.load(fip);
 

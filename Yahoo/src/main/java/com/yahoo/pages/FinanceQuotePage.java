@@ -44,7 +44,7 @@ public class FinanceQuotePage extends GenericWebFunctions {
 		return driver.getTitle();
 	}
 
-	// TO check the stockname displayed in the page
+	// To check the stockname displayed in the page
 	public boolean verifyStockName(String expValue) {
 		String actualValue = stockNameHdr.getText();
 		if (actualValue.contains(expValue)) {
@@ -74,8 +74,8 @@ public class FinanceQuotePage extends GenericWebFunctions {
 		}
 		return stockValueTxt.getText();
 	}
-	
-	//To read values present for the stock selected then store in the hashmap
+
+	// To read values present for the stock selected then store in the hashmap
 	public HashMap<String, String> displayStockDetails() {
 		HashMap<String, String> stockDetailsMap = new HashMap<String, String>();
 		moveToOrMouseHover(stockVolumeTxt);
