@@ -2,14 +2,12 @@ package com.yahoo.pages;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.yahoo.utils.GenericWebFunctions;
-import com.yahoo.utils.WaitsUtil;
 
 public class FinanceHomePage extends GenericWebFunctions {
 
@@ -20,12 +18,8 @@ public class FinanceHomePage extends GenericWebFunctions {
 	@FindBy(xpath = "//button[@id='ybar-search']")
 	public WebElement searchIconBtn;
 
-	String suggestedItemsList_xpath = "//ul/li[@data-type='quotes']";
-
-	static WebElement nthSuggestedRecord;
-
-	List<WebElement> elements;
-	WaitsUtil waitsUtil = new WaitsUtil();
+	@FindAll(@FindBy(xpath = "//ul/li[@data-type='quotes']"))
+	public List<WebElement> suggestedItemsList;
 
 	// initializing the page factory
 	public FinanceHomePage() {
@@ -47,44 +41,22 @@ public class FinanceHomePage extends GenericWebFunctions {
 	public String getNthRecordFromSuggestiveText(int nthValue) {
 		String nthItemName = "";
 
-		try {
-			elements = driver.findElements(By.xpath(suggestedItemsList_xpath));
-		} catch (NoSuchElementException e) {
-			log.warn("Caught NoSuchElementException " + e.getMessage());
-			waitsUtil.fluentWaitForClickOperationBy(By.xpath(suggestedItemsList_xpath), 30);
-		} catch (Exception e) {
-			log.error(e.getMessage());
-			e.printStackTrace();
-		}
-
-		if (elements.size() < 1) {
+		if (suggestedItemsList.size() < 1) {
 			log.warn("Incorrect Stock Code/Symbol, no entries suggested.");
 		} else {
-			generateXpath(nthValue);
-			nthItemName = getValueByAttribute(nthSuggestedRecord, "title");
+			nthItemName = getValueByAttribute(suggestedItemsList.get(nthValue - 1), "title");
 			log.info("Item listed in row number " + nthValue + " is: " + nthItemName);
 		}
 		return nthItemName;
 	}
 
-	// Concatenating the order number then creating xpath
-	public void generateXpath(int nthValue) {
-		String xpathVal = "(//ul/li[@data-type='quotes'])[" + nthValue + "]";
-		try {
-			nthSuggestedRecord = driver.findElement(By.xpath(xpathVal));
-		} catch (NoSuchElementException e) {
-			log.warn("Caught NoSuchElementException while trying find element");
-			waitsUtil.fluentWaitForClickOperation(nthSuggestedRecord, 30);
-		} catch (Exception e) {
-			log.error("Failed to generate xpath");
-			e.printStackTrace();
-		}
-	}
-
 	// click operation on select record
 	public void selectNthRecord(int nthValue) {
-		generateXpath(nthValue);
-		clickOnElement(nthSuggestedRecord);
+		if (suggestedItemsList.size() < 1) {
+			log.warn("Incorrect Stock Code/Symbol, no entries suggested.");
+		} else {
+			clickOnElement(suggestedItemsList.get(nthValue - 1));
+		}
 	}
 
 	// click operation on search magnifier

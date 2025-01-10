@@ -37,8 +37,9 @@ public class ValidateTeslaStock extends Driver {
 
 			// Step 2: Verify Autosuggest
 			log.info("Step 2: Verify Autosuggest");
+			int nthValue = Integer.parseInt(ExcelDataManipulator.getTestData("TeslaSearch", "ItemNumber"));
 
-			String suggestedEntry = financeHomePage.getNthRecordFromSuggestiveText(1);
+			String suggestedEntry = financeHomePage.getNthRecordFromSuggestiveText(nthValue);
 			if (suggestedEntry.equalsIgnoreCase(ExcelDataManipulator.getTestData("TeslaSearch", "StockFullName"))) {
 				extentTest.log(Status.FAIL, "Valid entry listed in the suggestive textbox.");
 			} else {
@@ -48,7 +49,7 @@ public class ValidateTeslaStock extends Driver {
 
 			// Step 3: Click on First Entry
 			log.info("Step 3: Click on First Entry");
-			financeHomePage.selectNthRecord(1);
+			financeHomePage.selectNthRecord(nthValue);
 			financeQuotePage.pageTitle();
 			boolean isDirectedTorightPage = financeQuotePage
 					.verifyStockName(ExcelDataManipulator.getTestData("TeslaSearch", "StockShortName"));
@@ -60,26 +61,30 @@ public class ValidateTeslaStock extends Driver {
 
 			// Step 4: Verify Stock Price
 			log.info("Step 4: Verify Stock Price");
-			double stockPrice = Double.parseDouble(financeQuotePage.readStockPrice());
-			System.out.println("Stock Price value: " + stockPrice);
-			if (stockPrice > 200.00) {
-				extentTest.log(Status.INFO, "Stock value is " + stockPrice);
-				extentTest.log(Status.PASS, "Stock value is greater than 200 USD.");
+			double actualStockPrice = Double.parseDouble(financeQuotePage.readStockPrice());
+			double expectedStockPrice = Double
+					.parseDouble(ExcelDataManipulator.getTestData("TeslaSearch", "PriceExceedBy"));
+			if (actualStockPrice > expectedStockPrice) {
+				extentTest.log(Status.INFO, "Stock value is " + actualStockPrice);
+				extentTest.log(Status.PASS, "Stock value is greater than " + expectedStockPrice);
 			} else {
-				extentTest.log(Status.INFO, "Stock value is " + stockPrice);
-				extentTest.log(Status.FAIL, "Stock value is lesser than 200 USD.");
+				extentTest.log(Status.INFO, "Stock value is " + actualStockPrice);
+				extentTest.log(Status.FAIL, "Stock value is lesser than " + expectedStockPrice);
 			}
 
 			// Step 5: Capture Additional Data
 			log.info("Step 5: Capture Additional Data");
 			HashMap<String, String> stockDetailsMap = financeQuotePage.displayStockDetails();
 			for (Map.Entry<String, String> entry : stockDetailsMap.entrySet()) {
-				System.out.println(entry.getKey() + ": " + entry.getValue());
 				extentTest.log(Status.INFO, entry.getKey() + " : " + entry.getValue());
 			}
 		} catch (AssertionError e) {
 			extentTest.log(Status.FAIL, "Assertion Failure while validating method validateStcok", e, null);
 			log.error("Assertion Failure! - Method Name: validateStcok");
+			e.printStackTrace();
+		} catch (NumberFormatException e) {
+			extentTest.log(Status.FAIL, "Failure while during data conversion", e, null);
+			log.error("Conversion Failure! - Method Name: validateStcok");
 			e.printStackTrace();
 		} catch (Exception e) {
 			extentTest.log(Status.FAIL, "Unknown Failure while validating method validateStcok", e, null);
